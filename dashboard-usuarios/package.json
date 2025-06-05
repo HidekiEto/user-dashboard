@@ -11,9 +11,13 @@
     "start": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "faker": "^6.6.6",
+    "json": "^11.0.0",
     "json-server": "^1.0.0-beta.3",
+    "lodash": "^4.17.21",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "server": "^1.0.41"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

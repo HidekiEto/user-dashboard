@@ -5,10 +5,10 @@ function App() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://localhost:3001/peoples')
+    fetch('http://localhost:3001/peoples')
       .then((res) => res.json())
       .then((data) => setUsers(data))
-      .catch((err) => console.error("Erro ao buscar usuários: ", err));
+      .catch((err) => console.error('Erro ao buscar usuários: ', err));
   }, []);
 
   return (
