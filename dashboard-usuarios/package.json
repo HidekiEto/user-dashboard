@@ -8,9 +8,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "json-server --watch db.json --port 3001"
+    "start": "npx json-server --watch backend/db.json --port 3001"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.8.0",
     "faker": "^6.6.6",
     "json": "^11.0.0",
     "json-server": "^1.0.0-beta.3",
