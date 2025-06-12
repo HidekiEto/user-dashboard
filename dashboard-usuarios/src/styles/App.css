@@ -1,0 +1,60 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.1em;
+  color: #3730a3;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.App p {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+.user-container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;      /* Espaçamento agradável e compacto */
+  margin: 8px 0;
+  min-height: 0;
+}
+
+@media (max-width: 900px) {
+  .user-container {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .App {
+    padding: 8px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
